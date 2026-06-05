@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<title>TechZone | Produtos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="../CSS/MOVEME.CSS" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Abrir menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-flash"></span> TechZone</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="produtos.html">Produtos</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="autores.html">Autores</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="intro-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3"><img class="img-responsive tpad" src="../IMAGES/PURPALT.png" alt="Logotipo TechZone"></div>
+            <div class="col-xs-9">
+                <h1>TechZone <span class="text-muted">&raquo; Produtos</span></h1>
+                <p class="lead">Catálogo de produtos tecnológicos com informação simples e objetiva.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container padded">
+    <div class="row">
+        <div class="col-lg-12"><h2>Catálogo</h2><hr></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="category-bar">
+                <button type="button" class="btn btn-primary category-filter active" data-category="todos">Todos</button>
+                <button type="button" class="btn btn-default category-filter" data-category="audio">Áudio</button>
+                <button type="button" class="btn btn-default category-filter" data-category="wearables">Wearables</button>
+                <button type="button" class="btn btn-default category-filter" data-category="perifericos">Perifericos</button>
+                <button type="button" class="btn btn-default category-filter" data-category="energia">Energia</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="product-search input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                <input id="product-search" class="form-control" type="text" placeholder="Procurar artigo">
+            </div>
+            <p id="search-empty" class="alert alert-info">Não foram encontrados artigos.</p>
+        </div>
+    </div>
+    <div class="row product-grid">
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="audio" data-name="Auscultadores Bluetooth" data-price="49.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/01- Auscutadores/1auscutadores/1auscutadores1.png" data-images="../IMAGES/01- Auscutadores/1auscutadores/1auscutadores1.png|../IMAGES/01- Auscutadores/1auscutadores/1auscutadores2.png|../IMAGES/01- Auscutadores/1auscutadores/1auscutadores3.png" alt="Auscultadores Bluetooth">
+            <h3>Auscultadores Bluetooth</h3>
+            <p>Cancelamento de ruído, microfone integrado e autonomia até 24 horas.</p>
+            <p class="price">49,99 EUR</p>
+            <a class="btn btn-default" href="produto-auscultadores.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="wearables" data-name="Smartwatch Fit" data-price="79.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/02. Smartwatch/smartwatch.png" data-images="../IMAGES/02. Smartwatch/smartwatch.png|../IMAGES/02. Smartwatch/smartwatch2.png|../IMAGES/02. Smartwatch/smartwatch3.png" alt="Smartwatch Fit">
+            <h3>Smartwatch Fit</h3>
+            <p>Relógio inteligente para notificações, saúde e atividade física.</p>
+            <p class="price">79,99 EUR</p>
+            <a class="btn btn-default" href="produto-smartwatch.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="perifericos" data-name="Teclado Mecânico" data-price="64.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/03. Teclado/teclado.png" data-images="../IMAGES/03. Teclado/teclado.png|../IMAGES/03. Teclado/teclado2.png|../IMAGES/03. Teclado/teclado3.png" alt="Teclado Mecânico">
+            <h3>Teclado Mecânico</h3>
+            <p>Teclado retroiluminado com switches rapidos e estrutura resistente.</p>
+            <p class="price">64,99 EUR</p>
+            <a class="btn btn-default" href="produto-teclado.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="energia" data-name="Powerbank 20000mAh" data-price="34.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/04. Powerbank/powerbank.png" data-images="../IMAGES/04. Powerbank/powerbank.png|../IMAGES/04. Powerbank/powerbank2.png|../IMAGES/04. Powerbank/powerbank3.png" alt="Powerbank">
+            <h3>Powerbank 20000mAh</h3>
+            <p>Bateria externa com duas portas USB e carregamento rápido.</p>
+            <p class="price">34,99 EUR</p>
+            <a class="btn btn-default" href="produto-powerbank.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="perifericos" data-name="Rato Gaming RGB" data-price="29.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/05. Rato/1rato/1rato1.png" data-images="../IMAGES/05. Rato/1rato/1rato1.png|../IMAGES/05. Rato/1rato/1rato2.png|../IMAGES/05. Rato/1rato/1rato3.png" alt="Rato Gaming">
+            <h3>Rato Gaming RGB</h3>
+            <p>Sensor preciso, botões programáveis e iluminação personalizável.</p>
+            <p class="price">29,99 EUR</p>
+            <a class="btn btn-default" href="produto-rato.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="audio" data-name="Auscultadores Wireless Pro" data-price="59.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/01- Auscutadores/2auscutadores/2auscutadores1.png" data-images="../IMAGES/01- Auscutadores/2auscutadores/2auscutadores1.png|../IMAGES/01- Auscutadores/2auscutadores/2auscutadores2.png|../IMAGES/01- Auscutadores/2auscutadores/2auscutadores3.png" alt="Auscultadores Wireless Pro">
+            <h3>Auscultadores Wireless Pro</h3>
+            <p>Som envolvente, design moderno e autonomia reforçada para uso diário.</p>
+            <p class="price">59,99 EUR</p>
+            <a class="btn btn-default" href="produto-auscultadores-pro.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="perifericos" data-name="Rato Wireless Office" data-price="24.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/05. Rato/2rato/2rato1.png" data-images="../IMAGES/05. Rato/2rato/2rato1.png|../IMAGES/05. Rato/2rato/2rato2.png|../IMAGES/05. Rato/2rato/2rato3.png" alt="Rato Wireless Office">
+            <h3>Rato Wireless Office</h3>
+            <p>Rato sem fios, leve e prático para trabalho, aulas e utilização diária.</p>
+            <p class="price">24,99 EUR</p>
+            <a class="btn btn-default" href="produto-rato-wireless.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="perifericos" data-name="Rato Gaming Pro" data-price="44.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/05. Rato/3rato/3rato1.png" data-images="../IMAGES/05. Rato/3rato/3rato1.png|../IMAGES/05. Rato/3rato/3rato2.png|../IMAGES/05. Rato/3rato/3rato3.png" alt="Rato Gaming Pro">
+            <h3>Rato Gaming Pro</h3>
+            <p>Sensor preciso, formato ergonómico e desempenho pensado para jogos competitivos.</p>
+            <p class="price">44,99 EUR</p>
+            <a class="btn btn-default" href="produto-rato-pro.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+        <div class="col-sm-6 col-md-4 bpad" data-product data-category="audio" data-name="Coluna Portatil" data-price="39.99">
+            <img class="img-responsive product-photo product-hover-gallery" src="../IMAGES/06. Coluna/coluna.png" data-images="../IMAGES/06. Coluna/coluna.png|../IMAGES/06. Coluna/coluna2.png|../IMAGES/06. Coluna/coluna3.png" alt="Coluna portátil">
+            <h3>Coluna Portatil</h3>
+            <p>Som compacto, ligação Bluetooth e resistência para uso diário.</p>
+            <p class="price">39,99 EUR</p>
+            <a class="btn btn-default" href="produto-coluna.html">Ver detalhes</a>
+            <a class="btn btn-primary add-to-cart" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Adicionar</a>
+        </div>
+    </div>
+</div>
+<div class="ftr">
+    <div class="container"><footer><address><h3>TechZone</h3>Avenida Nuno Alvares, 42<br>6000-083 Castelo Branco<br><a href="mailto:geral@techzone.pt">geral@techzone.pt</a></address></footer></div>
+</div>
+<script src="../JS/jQuery.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/carrinho.js"></script>
+<script src="../JS/produto-hover.js"></script>
+<script>
+$(function () {
+    var activeCategory = 'todos';
+
+    function filterProducts() {
+        var searchText = $('#product-search').val().toLowerCase();
+        var visibleProducts = 0;
+
+        $('[data-product]').each(function () {
+            var product = $(this);
+            var productName = product.data('name').toLowerCase();
+            var productCategory = product.data('category');
+            var matchesCategory = activeCategory === 'todos' || productCategory === activeCategory;
+            var matchesSearch = productName.indexOf(searchText) !== -1;
+            var isVisible = matchesCategory && matchesSearch;
+
+            product.toggle(isVisible);
+
+            if (isVisible) {
+                visibleProducts += 1;
+            }
+        });
+
+        $('#search-empty').toggle(visibleProducts === 0);
+    }
+
+    $('#product-search').on('keyup', filterProducts);
+
+    $('.category-filter').on('click', function () {
+        activeCategory = $(this).data('category');
+
+        $('.category-filter')
+            .removeClass('btn-primary active')
+            .addClass('btn-default');
+
+        $(this)
+            .removeClass('btn-default')
+            .addClass('btn-primary active');
+
+        filterProducts();
+    });
+
+    filterProducts();
+});
+</script>
+</body>
+</html>

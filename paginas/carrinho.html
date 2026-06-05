@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<title>TechZone | Carrinho</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="../CSS/MOVEME.CSS" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Abrir menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html"><span class="glyphicon glyphicon-flash"></span> TechZone</a></div>
+    <div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="produtos.html">Produtos</a></li><li><a href="promocoes.html">Promoções</a></li><li><a href="autores.html">Autores</a></li><li><a href="contactos.html">Contactos</a></li><li class="active"><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li></ul></div>
+</nav>
+<div class="intro-block"><div class="container"><div class="row"><div class="col-xs-3"><img class="img-responsive tpad" src="../IMAGES/PURPALT.png" alt="Logotipo TechZone"></div><div class="col-xs-9"><h1>Carrinho</h1><p class="lead">Simulação visual de compra online.</p></div></div></div></div>
+<div class="container padded">
+    <p id="cart-empty" class="alert alert-info">O carrinho esta vazio.</p>
+    <table class="table table-striped cart-table">
+        <thead>
+            <tr><th>Produto</th><th>Quantidade</th><th>Preco</th><th>Total</th><th>Acoes</th></tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+        <tfoot>
+            <tr><td colspan="4">Subtotal</td><td id="cart-subtotal">0,00 EUR</td></tr>
+            <tr id="cart-discount-row"><td colspan="4">Desconto IPCB20</td><td id="cart-discount">-0,00 EUR</td></tr>
+            <tr><td colspan="4">Envio <small>(grátis acima de 200 EUR)</small></td><td id="cart-shipping">0,00 EUR</td></tr>
+            <tr class="cart-total"><td colspan="4">Total da encomenda</td><td id="cart-total">0,00 EUR</td></tr>
+        </tfoot>
+    </table>
+    <div class="coupon-box">
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="coupon-code">Cupao de desconto</label>
+                <div class="input-group">
+                    <input id="coupon-code" class="form-control" type="text" placeholder="Código do cupão">
+                    <span class="input-group-btn">
+                        <button id="apply-coupon" class="btn btn-primary" type="button">Aplicar</button>
+                    </span>
+                </div>
+                <p id="coupon-message" class="coupon-message"></p>
+            </div>
+        </div>
+    </div>
+    <p><a id="checkout-button" class="btn btn-primary btn-lg" href="#"><span class="glyphicon glyphicon-ok"></span> Finalizar compra</a> <a class="btn btn-default btn-lg" href="produtos.html">Continuar a comprar</a></p>
+</div>
+<div class="ftr"><div class="container"><footer><address><h3>TechZone</h3>Avenida Nuno Alvares, 42<br>6000-083 Castelo Branco<br><a href="mailto:geral@techzone.pt">geral@techzone.pt</a></address></footer></div></div>
+<script src="../JS/jQuery.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/carrinho.js"></script>
+</body>
+</html>
